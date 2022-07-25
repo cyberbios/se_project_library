@@ -346,14 +346,18 @@ children */
 }
 
 .membership__steps {
-  list-style-type: none;
-  padding: 0;
-  margin: 100px 0 0;
   /* Add styles */
+  flex-basis: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .step {
   /* Add styles */
+  width: 220px;
+  gap: 40px;
+  margin: 100px 0 0;
 }
 
 .step__title {
@@ -398,7 +402,10 @@ children */
 }
 
 .about__paragraph {
-  margin: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
 }
 
 .about__circle {
