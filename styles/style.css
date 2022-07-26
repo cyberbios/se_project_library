@@ -389,7 +389,6 @@ children */
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
-  position: relative;
   z-index: 1;
 }
 
