@@ -7,6 +7,8 @@ body {
 .page {
   min-width: 1100px;
   max-width: 1600px;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
 }
 
@@ -23,17 +25,21 @@ body {
 
 .nav {
   /* Add flex properties here */
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
   width: 196px;
-  height: 68px;
+  height: 60px;
 }
 
 .nav__links {
   list-style: none;
   padding-left: 0;
   margin-top: 8px;
+  margin-right: 20px;
   float: right;
   display: flex;
   column-gap: 20px;
@@ -47,11 +53,11 @@ body {
   font-weight: bold;
 }
 
+/* Add the hover state styles for .nav__link here */
+
 .nav__link:hover {
   color: #1f69c9;
 }
-
-/* Add the hover state styles for .nav__link here */
 
 .header__title {
   font-size: 66px;
@@ -74,7 +80,7 @@ body {
   position: absolute;
   z-index: 1;
   top: 135px;
-  right: 20px;
+  right: 50px;
 }
 
 .header__footer {
@@ -131,7 +137,7 @@ children */
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 760px;
   margin: 68px auto;
   gap: 40px;
@@ -207,7 +213,6 @@ children */
 }
 
 .events__info-section {
-  margin-top: 32px;
 }
 
 .event-info__item {
@@ -219,8 +224,8 @@ children */
 
 .event-info__icon {
   background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 12px;
+  background-position: left;
+  margin-right: 0;
 }
 
 .event-info__icon_type_calendar {
@@ -234,8 +239,7 @@ children */
 .event-info__text {
   font-size: 20px;
   font-weight: 500;
-  line-height: 30px;
-  margin: 0;
+  margin: 32px;
 }
 
 .events__description {
@@ -347,6 +351,7 @@ children */
 
 .membership__steps {
   /* Add styles */
+  list-style: none;
   flex-basis: auto;
   display: flex;
   flex-direction: row;
@@ -357,7 +362,7 @@ children */
   /* Add styles */
   width: 220px;
   gap: 40px;
-  margin: 100px 0 0;
+  margin: 120px 0 80px 0;
 }
 
 .step__title {
@@ -384,14 +389,18 @@ children */
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 }
 
 .about__title {
-  margin: 0;
+  position: relative;
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
   z-index: 1;
+  left: 0px;
+  top: -10px;
 }
 
 .about__content {
@@ -402,10 +411,9 @@ children */
 }
 
 .about__paragraph {
-  display: flex;
-  align-items: center;
   position: relative;
-  justify-content: center;
+  left: 275px;
+  top: -60px;
 }
 
 .about__circle {
@@ -413,17 +421,23 @@ children */
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  z-index: -1;
+  position: absolute;
+  left: -91px;
+  top: -121px;
 }
 
 .footer {
   box-sizing: border-box;
   background-color: #1f1f1f;
   color: #fff;
-  padding: 57px 102px 60px 80px;
+  min-height: 224px;
+  padding: 60px 102px 60px 80px;
 }
 
 .footer__columns {
   display: flex;
+  padding: 60px 102px 130px 0px;
 }
 
 .footer__column_content_hours {
@@ -435,7 +449,8 @@ children */
 }
 
 .footer__logo {
-  width: 153px;
+  width: 146px;
+  height: 30px;
 }
 
 .footer__list {
@@ -451,19 +466,22 @@ children */
 
 .footer__list-item:last-of-type {
   margin-bottom: 0;
+  font-size: 16px;
 }
 
 .footer__column-heading {
   margin: 0 0 20px;
+  font-size: 16px;
 }
 
 .footer__column-link {
   color: white;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 28px;
   text-decoration: none;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .footer__column-link:hover {
@@ -477,5 +495,6 @@ children */
 }
 
 .footer__copyright {
-  max-resolution: 108px 0 0;
+  letter-spacing: 3px;
+  font-size: 16px;
 }
