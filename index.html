@@ -24,7 +24,7 @@
           between each link instead of reading all the links as a sentence. -->
           <ul class="nav__links">
             <li>
-              <a href="#Reader-Picks" class="nav__link">Reader picks</a>
+              <a href="#Staff" class="nav__link">Reader picks</a>
             </li>
             <li>
               <a href="#Events" class="nav__link">Events</a>
@@ -36,7 +36,7 @@
               <a href="#About" class="nav__link">About</a>
             </li>
             <li>
-              <a href="#Contacts" class="nav__link">Contacts</a>
+              <a href="#Footer-Heading" class="nav__link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -62,7 +62,7 @@
 
       <main class="content">
         <section class="staff">
-          <h2 class="staff__title" id="Reader-Picks">Reader picks</h2>
+          <h2 class="staff__title" id="Staff">Reader picks</h2>
           <p class="staff__subtitle">That our readers love</p>
           <!-- Wrap those cards! -->
           <!-- The ul tag (unordered list) is used here as it is a collection of
@@ -164,11 +164,7 @@
                   much simpler for many people involved in Oriented Object
                   Software development, this book has all the major diagram
                   types in the UML and a number of principles and techniques for
-                  good Oriented Object development. The UML appeared in 1997 to
-                  eliminate the bedlam that had overtaken graphical modeling
-                  languages in the object-oriented world. Before the UML there
-                  were a host of such languages, differing in all sorts of
-                  annoying ways.
+                  good Oriented Object development.
                 </p>
                 <p class="card__footer">Martin Fowler</p>
               </div>
@@ -184,16 +180,16 @@
             </h3>
             <div class="event-info events__info-section">
               <div class="event-info__item">
-                <div class="event-info__icon event-info__icon_type_calendar">
-                  <p class="event-info__text">Mon, January 12</p>
-                </div>
+                <div
+                  class="event-info__icon event-info__icon_type_calendar"
+                ></div>
+                <p class="event-info__text">Mon, January 12</p>
               </div>
               <div class="event-info__item">
-                <div class="event-info__icon event-info__icon_type_pin">
-                  <p class="event-info__text">
-                    Practicum Library Conference Hall & Online
-                  </p>
-                </div>
+                <div class="event-info__icon event-info__icon_type_pin"></div>
+                <p class="event-info__text">
+                  Practicum Library Conference Hall & Online
+                </p>
               </div>
             </div>
             <p class="events__description">
@@ -353,17 +349,19 @@
               alt="Logo Practicum"
             />
           </div>
-          <div class="footer__column_content_hours">
+          <div class="footer__column footer__column_content_hours">
             <h2 class="footer__column-heading">Hours</h2>
             <ul class="footer__list">
               <li class="footer__list-item">Weekdays: 9am - 8pm</li>
               <li class="footer__list-item">Weekends: 10am - 6pm</li>
             </ul>
           </div>
-          <div class="footer__column_content_social">
-            <h2 class="footer__column-heading" id="Contacts">Social Media</h2>
+          <div class="footer__column footer__column_content_social">
+            <h2 class="footer__column-heading" id="Footer-Heading">
+              Social Media
+            </h2>
             <ul class="footer__list">
-              <li class="fotter__list-item">
+              <li class="footer__list-item">
                 <a class="footer__column-link" href="#">
                   <img
                     class="footer__social-icon"
@@ -372,7 +370,7 @@
                   />Facebook
                 </a>
               </li>
-              <li class="fotter__list-item">
+              <li class="footer__list-item">
                 <a class="footer__column-link" href="#">
                   <img
                     class="footer__social-icon"
@@ -384,7 +382,7 @@
             </ul>
           </div>
         </div>
-        <p class="footer__column-copyrights">&copy; 2022 Lev Meir</p>
+        <p class="footer__copyright">&copy; 2022 Lev Meir</p>
       </footer>
     </div>
   </body>

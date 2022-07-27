@@ -1,5 +1,5 @@
 body {
-  font-family: "Helvetica Neue Medium Extended", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -7,8 +7,6 @@ body {
 .page {
   min-width: 1100px;
   max-width: 1600px;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto;
 }
 
@@ -25,8 +23,7 @@ body {
 
 .nav {
   /* Add flex properties here */
-  position: relative;
-  justify-content: center;
+  display: flexbox;
   align-items: center;
 }
 
@@ -38,13 +35,10 @@ body {
 .nav__links {
   list-style: none;
   padding-left: 0;
-  margin-top: 8px;
-  margin-right: 20px;
-  float: right;
+  margin-top: -55px;
   display: flex;
   column-gap: 20px;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .nav__link {
@@ -80,7 +74,7 @@ body {
   position: absolute;
   z-index: 1;
   top: 135px;
-  right: 50px;
+  right: 20px;
 }
 
 .header__footer {
@@ -134,12 +128,13 @@ body {
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their
 children */
 .staff__card-collection {
+  padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 760px;
-  margin: 68px auto;
+  margin: 68px auto 0;
   gap: 40px;
 }
 
@@ -212,8 +207,7 @@ children */
   margin: 32px 0;
 }
 
-.events__info-section {
-}
+/*.events__info-section {}*/
 
 .event-info__item {
   display: flex;
@@ -224,8 +218,10 @@ children */
 
 .event-info__icon {
   background-repeat: no-repeat;
-  background-position: left;
-  margin-right: 0;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
 }
 
 .event-info__icon_type_calendar {
@@ -239,7 +235,8 @@ children */
 .event-info__text {
   font-size: 20px;
   font-weight: 500;
-  margin: 32px;
+  line-height: 30px;
+  margin: 0;
 }
 
 .events__description {
@@ -351,18 +348,18 @@ children */
 
 .membership__steps {
   /* Add styles */
+  padding: 0;
+  margin: 100px 0 0;
   list-style: none;
-  flex-basis: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 40px;
 }
 
 .step {
   /* Add styles */
-  width: 220px;
-  gap: 40px;
-  margin: 120px 0 80px 0;
+  flex-basis: 13em;
 }
 
 .step__title {
@@ -383,6 +380,8 @@ children */
 }
 
 .about {
+  display: flex;
+  gap: 120px;
   padding: 100px 80px;
   background-color: #1f1f1f;
   color: #fff;
@@ -393,13 +392,11 @@ children */
 }
 
 .about__title {
-  position: relative;
+  margin: 0;
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
   z-index: 1;
-  left: 0px;
-  top: -10px;
 }
 
 .about__content {
@@ -410,9 +407,11 @@ children */
 }
 
 .about__paragraph {
-  position: relative;
-  left: 275px;
-  top: -60px;
+  margin: 0 0 32px;
+}
+
+.about__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .about__circle {
@@ -436,7 +435,6 @@ children */
 
 .footer__columns {
   display: flex;
-  padding: 60px 102px 130px 0px;
 }
 
 .footer__column_content_hours {
@@ -465,18 +463,16 @@ children */
 
 .footer__list-item:last-of-type {
   margin-bottom: 0;
-  font-size: 16px;
 }
 
 .footer__column-heading {
   margin: 0 0 20px;
-  font-size: 16px;
 }
 
 .footer__column-link {
   color: white;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 20px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -490,10 +486,10 @@ children */
 .footer__social-icon {
   width: 16px;
   height: 16px;
-  margin-right: 16px;
+  margin-right: 10px;
 }
 
 .footer__copyright {
-  letter-spacing: 3px;
-  font-size: 16px;
+  /*letter-spacing: 1px;*/
+  margin: 108px 0 0;
 }
